@@ -1,7 +1,9 @@
 resource "azurerm_resource_group" "thisresourcegroup" {
   name     = var.resource_group_name_module
   location = var.resource_group_location_module
-
+  tags = {
+    codesource = "module from Terraform-Modules repo."
+  }
 }
 
 output "resource_group_id" {
