@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "thisresourcegroup" {
   location = var.resource_group_location_module
   tags = {
     codesource = "module from Terraform-Modules repo."
-    version = "1.1"
+    version = "1.2"
   }
 }
 

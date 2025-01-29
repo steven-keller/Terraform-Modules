@@ -5,5 +5,9 @@ resource "azurerm_storage_account" "thisstorageAccount" {
   location                 = var.resource_group_location
   account_tier             = "Standard"
   account_replication_type = "GRS"
+  tags = {
+    codesource = "module from Terraform-Modules repo."
+    version = "1.0"
+  }
 }
 
